@@ -1,0 +1,10 @@
+<div>
+    <h2>TAsk -1 </h2>
+    <label for="index">Enter index:</label>
+    <input type="number" id="index" [(ngModel)]="index" />
+    <button (click)="calculateNumberAtIndex()">Get Number</button>
+    <div *ngIf="result !== undefined">
+      The number at index {{ index }} is {{ result }}.
+    </div>
+  </div>
+  
